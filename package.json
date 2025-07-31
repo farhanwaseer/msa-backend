@@ -1,0 +1,29 @@
+{
+  "name": "mehran-association",
+  "version": "1.0.0",
+  "description": "MSA Org App rest api",
+  "license": "ISC",
+  "author": "Farhan waseer",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm start\" \"npm run client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "colors": "^1.4.0",
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.15.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.10",
+    "react-router-dom": "^7.6.1"
+  }
+}
